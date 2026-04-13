@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/contact', function(){
+    return view('contact');
+});
+
 //Parâmetros 
 Route::get('/contact/{firstname}/{lastname}', function ($firstname, $lastname) {
     return $firstname. " " .$lastname;
